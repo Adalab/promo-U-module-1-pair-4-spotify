@@ -11,7 +11,20 @@ body {
   height: 50px;
 }
 
+.logo {
+  width: 150px;
+}
+
+.menu {
+  background-image: url(../img/menu-icon.png);
+  width: 30px;
+  float: right;
+}
+
 .seccion_1 {
+  /* background-image: url(../img/premium_dancer.png); */
+  /* background-size: cover;
+  background-position: center; */
   background-color: #529cf1;
   height: 300px;
   color: white;
@@ -29,3 +42,4 @@ body {
   width: 100%;
   bottom: 0;
 }
+/*arreglar el footer para que quede fijo abajo*/
