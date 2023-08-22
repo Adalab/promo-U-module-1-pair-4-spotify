@@ -9,37 +9,60 @@ body {
 .header {
   background-color: #010101;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .logo {
-  width: 150px;
+  width: 100px;
+  object-fit: fill;
 }
 
 .menu {
   background-image: url(../img/menu-icon.png);
-  width: 30px;
-  float: right;
 }
 
 .seccion_1 {
   /* background-image: url(../img/premium_dancer.png); */
   /* background-size: cover;
   background-position: center; */
+
   background-color: #529cf1;
-  height: 300px;
+  height: 50vh;
   color: white;
+  padding: 70px 10px 20px;
+}
+.title-sec1 {
+  font-size: 32px;
+  text-align: center;
+}
+.subtitle-sec1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .seccion_2 {
   background-color: #fefefe;
   height: 500px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.item-sec2 {
+  display: flex;
+}
+.item-sec2 div {
+  display: flex;
+  flex-direction: column;
+}
 .footer {
   background-color: #010101;
   height: 100px;
   position: absolute;
   width: 100%;
   bottom: 0;
+  left: 0;
+  position: fixed;
 }
 /*arreglar el footer para que quede fijo abajo*/
