@@ -2,10 +2,13 @@ html {
   position: relative;
   font-family: "Roboto";
 }
+
 .container {
   margin: 0 15px;
 }
+
 .header {
+  border: solid 3px red;
   background-color: #010101;
   height: 50px;
   position: sticky;
@@ -30,14 +33,16 @@ html {
 }
 
 .main {
+  border: solid 3px red;
+  width: 100%;
   height: 100vh;
 }
+
 .seccion_1 {
+  border: solid 3px greenyellow;
   background-color: #529cf1;
   height: 50%;
   width: 100vw;
-}
-.seccion_1 .container {
   color: white;
   display: flex;
   flex-direction: column;
@@ -46,6 +51,7 @@ html {
   gap: 50px;
   padding: 10px;
 }
+
 .title-sec1 {
   font-size: 3.2rem;
   text-align: center;
@@ -69,22 +75,45 @@ html {
 }
 
 .seccion_2 {
+  width: 100%;
+  border: solid 3px violet;
   background-color: #fefefe;
-  height: 500px;
+  width: 100%;
+}
+
+.articles {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion_2 h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 35px;
 }
 
 .item-sec2 {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.item-sec2 img {
+  width: 100px;
+  height: 100px;
+}
+
 .item-sec2 div {
   display: flex;
   flex-direction: column;
 }
+
 .footer {
+  border: solid 3px red;
   background-color: #010101;
   height: 100px;
   width: 100%;
+  margin-top: 50px;
 }
 /*arreglar el footer para que quede fijo abajo*/
