@@ -2,10 +2,55 @@ html {
   position: relative;
   font-family: "Roboto";
 }
-
-.container {
-  margin: 0 15px;
+body {
+  border: 3px solid red;
 }
+header {
+  background-color: aqua;
+  height: 100px;
+}
+.header_img {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+.seccion_1 {
+  background-color: blue;
+  height: 300px;
+}
+.seccion_1 div {
+  height: 50px;
+  width: 200px;
+}
+.h1_sec1 {
+  background-color: rgb(37, 105, 165);
+}
+.p_sec1 {
+  background-color: rgb(48, 155, 155);
+}
+.button_sec1 {
+  background-color: rgb(52, 206, 103);
+}
+.terms_sec1 {
+  background-color: brown;
+}
+.seccion_2 {
+  background-color: yellow;
+  height: 300px;
+}
+.h2_sec2 {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(37, 105, 165);
+}
+.footer {
+  background-color: brown;
+  height: 200px;
+}
+
+/*
+
 
 .header {
   border: solid 3px red;
@@ -116,4 +161,4 @@ html {
   width: 100%;
   margin-top: 50px;
 }
-/*arreglar el footer para que quede fijo abajo*/
+*/
