@@ -2,18 +2,30 @@ html {
   position: relative;
   font-family: "Roboto";
 }
-body {
-  border: 3px solid red;
-}
 
 header {
   background-color: black;
+  display: flex;
+  justify-content: space-between;
 }
-.header_img {
-  background-color: yellow;
-  height: 100px;
+.header_logo {
   width: 100px;
-  display: inline-block;
+  padding: 15px;
+}
+
+.header_menu {
+  width: 30px;
+  padding: 15px;
+}
+/* PORQUE CON PX LA IMAGEN DEL MENU SE QUITA? CUANDO TIENE PADDING Y CON % NO PASA ESO? */
+
+.header_nav {
+  display: none;
+}
+
+/* BOXES */
+body {
+  border: 3px solid red;
 }
 
 .main {
