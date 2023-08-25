@@ -1,3 +1,148 @@
+html {
+  position: relative;
+  font-family: "Roboto";
+}
+body {
+  border: 3px solid red;
+}
+
+header {
+  background-color: black;
+}
+.header_img {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.main {
+  min-height: 80vh;
+  background-color: cornflowerblue;
+}
+
+.seccion_1 {
+  background-color: blue;
+  height: 50vh;
+}
+.seccion_1 div {
+  height: 50px;
+  width: 200px;
+}
+.h1_sec1 {
+  background-color: rgb(37, 105, 165);
+}
+.p_sec1 {
+  background-color: rgb(48, 155, 155);
+}
+.button_sec1 {
+  background-color: rgb(52, 206, 103);
+}
+.terms_sec1 {
+  background-color: brown;
+}
+.seccion_2 {
+  background-color: yellow;
+}
+.h2_sec2 {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(37, 105, 165);
+}
+
+.contenedor-gral {
+  border: 2px solid green;
+}
+
+.cont-img1-text1 {
+  background-color: violet;
+  height: 100px;
+  display: flex;
+}
+
+.img1 {
+  background-color: orange;
+  width: 50%;
+  height: 80px;
+}
+
+.text1 {
+  background-color: cyan;
+  width: 50%;
+  height: 80px;
+}
+
+.cont-img2-text2 {
+  background-color: violet;
+  height: 100px;
+  display: flex;
+}
+
+.img2 {
+  background-color: orange;
+  width: 50%;
+  height: 80px;
+}
+
+.text2 {
+  background-color: cyan;
+  width: 50%;
+  height: 80px;
+}
+
+.cont-img3-text3 {
+  background-color: violet;
+  height: 100px;
+  display: flex;
+}
+
+.img3 {
+  background-color: orange;
+  width: 50%;
+  height: 80px;
+}
+
+.text3 {
+  background-color: cyan;
+  width: 50%;
+  height: 80px;
+}
+
+.cont-img4-text4 {
+  background-color: violet;
+  height: 100px;
+  display: flex;
+}
+
+.img4 {
+  background-color: orange;
+  width: 50%;
+  height: 80px;
+}
+
+.text4 {
+  background-color: cyan;
+  width: 50%;
+  height: 80px;
+}
+
+/*AQUÍ EMPIEZA EL FOOTER!!!*/
+
+.footer {
+  background-color: brown;
+  height: 200px;
+}
+
+.nav-footer {
+  background-color: darkgoldenrod;
+  height: 100px;
+}
+
+.cookie {
+  background-color: lightgoldenrodyellow;
+}
+
+/*
 .header {
   border: solid 3px red;
   background-color: #010101;
@@ -107,3 +252,4 @@
   width: 100%;
   margin-top: 50px;
 }
+*/
