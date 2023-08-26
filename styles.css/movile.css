@@ -9,15 +9,16 @@ header {
   justify-content: space-between;
 }
 .header_logo {
-  width: 100px;
-  padding: 15px;
+  height: 48px;
+  padding: 12px;
 }
 
 .header_menu {
-  width: 30px;
-  padding: 15px;
+  height: 48px;
+  padding: 12px;
 }
-/* PORQUE CON PX LA IMAGEN DEL MENU SE QUITA? CUANDO TIENE PADDING Y CON % NO PASA ESO? */
+/* PORQUE CON PX LA IMAGEN DEL MENU SE QUITA? CUANDO TIENE PADDING Y CON % NO PASA ESO? 
+Lo cambie a height y se ha solucionado. */
 
 .header_nav {
   display: none;
