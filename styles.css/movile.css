@@ -1,268 +1,127 @@
+body {
+  border: 3px solid red;
+}
+
 html {
   position: relative;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   background-color: black;
   display: flex;
+  position: sticky;
+  z-index: 100px;
+  top: 0;
   justify-content: space-between;
 }
-.header_logo {
-  height: 48px;
-  padding: 12px;
-}
 
-.header_menu {
+.header_img {
   height: 48px;
   padding: 12px;
 }
-/* PORQUE CON PX LA IMAGEN DEL MENU SE QUITA? CUANDO TIENE PADDING Y CON % NO PASA ESO? 
-Lo cambie a height y se ha solucionado. */
 
 .header_nav {
   display: none;
 }
-
-/* BOXES */
-body {
-  border: 3px solid red;
-}
-
 .main {
-  min-height: 80vh;
-  background-color: cornflowerblue;
+  min-height: 100vh;
 }
 
 .seccion_1 {
-  background-color: blue;
   height: 50vh;
-}
-.seccion_1 div {
-  height: 50px;
-  width: 200px;
-}
-.h1_sec1 {
-  background-color: rgb(37, 105, 165);
-}
-.p_sec1 {
-  background-color: rgb(48, 155, 155);
-}
-.button_sec1 {
-  background-color: rgb(52, 206, 103);
-}
-.terms_sec1 {
-  background-color: brown;
-}
-.seccion_2 {
-  background-color: yellow;
-}
-.h2_sec2 {
-  width: 100px;
-  height: 50px;
-  background-color: rgb(37, 105, 165);
-}
-
-.contenedor-gral {
-  border: 2px solid green;
-}
-
-.cont-img1-text1 {
-  background-color: violet;
-  height: 100px;
-  display: flex;
-}
-
-.img1 {
-  background-color: orange;
-  width: 50%;
-  height: 80px;
-}
-
-.text1 {
-  background-color: cyan;
-  width: 50%;
-  height: 80px;
-}
-
-.cont-img2-text2 {
-  background-color: violet;
-  height: 100px;
-  display: flex;
-}
-
-.img2 {
-  background-color: orange;
-  width: 50%;
-  height: 80px;
-}
-
-.text2 {
-  background-color: cyan;
-  width: 50%;
-  height: 80px;
-}
-
-.cont-img3-text3 {
-  background-color: violet;
-  height: 100px;
-  display: flex;
-}
-
-.img3 {
-  background-color: orange;
-  width: 50%;
-  height: 80px;
-}
-
-.text3 {
-  background-color: cyan;
-  width: 50%;
-  height: 80px;
-}
-
-.cont-img4-text4 {
-  background-color: violet;
-  height: 100px;
-  display: flex;
-}
-
-.img4 {
-  background-color: orange;
-  width: 50%;
-  height: 80px;
-}
-
-.text4 {
-  background-color: cyan;
-  width: 50%;
-  height: 80px;
-}
-
-/*AQUÍ EMPIEZA EL FOOTER!!!*/
-
-.footer {
-  background-color: brown;
-  height: 200px;
-}
-
-.nav-footer {
-  background-color: darkgoldenrod;
-  height: 100px;
-}
-
-.cookie {
-  background-color: lightgoldenrodyellow;
-}
-
-/*
-.header {
-  border: solid 3px red;
-  background-color: #010101;
-  height: 50px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-}
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-
-.logo {
-  width: 100px;
-  object-fit: fill;
-}
-
-.menu {
-  width: 30px;
-}
-
-.main {
-  border: solid 3px red;
-  width: 100%;
-  height: 100vh;
-}
-
-.seccion_1 {
-  border: solid 3px greenyellow;
   background-color: #529cf1;
-  height: 50%;
-  width: 100vw;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 10px 30px;
   color: white;
+  height: 100%;
+  gap: 15px;
+  overflow-y: auto;
+}
+.title1 {
+  font-size: 4rem;
+}
+.subtitle1 {
+  font-size: 2.2rem;
+}
+.button1 {
+  background-color: #2bb85a;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  margin-block: 10px;
+  max-width: 320px;
+}
+.terms1 {
+  font-size: 1rem;
+}
+
+.seccion_2 {
+  background-color: #fefefe;
+  padding: 45px 10px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
-  padding: 10px;
 }
-
-.title-sec1 {
+.title2 {
   font-size: 3.2rem;
   text-align: center;
 }
-.subtitle-sec1 {
-  font-size: 2rem;
-}
-
-.button-green {
-  background-color: #2bb85a;
-  color: white;
-  border: 2px solid #2bb85a;
-  border-radius: 50px;
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  width: 35rem;
-}
-
-.seccion_2 {
-  width: 100%;
-  border: solid 3px violet;
-  background-color: #fefefe;
-  width: 100%;
-}
-
 .articles {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 30px;
+  gap: 30px;
 }
-
-.seccion_2 h2 {
-  font-size: 2.4rem;
-  text-align: center;
-  padding: 35px;
-}
-
 .item-sec2 {
   display: flex;
-  flex-wrap: wrap;
+}
+.img2 {
+  width: 50%;
+  display: flex;
   justify-content: center;
 }
-
-.item-sec2 img {
-  width: 100px;
+.img2 img {
   height: 100px;
 }
+.info2 {
+  width: 50%;
+}
+.info2 h3 {
+  font-size: 1.6rem;
+}
 
-.item-sec2 div {
-  display: flex;
-  flex-direction: column;
+.info2 p {
+  margin-top: 10px;
+  color: #54585a;
 }
 
 .footer {
-  border: solid 3px red;
-  background-color: #010101;
-  height: 100px;
-  width: 100%;
-  margin-top: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
 }
-*/
+
+.nav-footer {
+  width: 50%;
+}
+
+.copyright {
+  width: 50%;
+  padding: 30px;
+}
+.ul-footer {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
