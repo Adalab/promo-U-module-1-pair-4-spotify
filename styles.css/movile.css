@@ -4,10 +4,11 @@ html {
 }
 
 body {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
 }
 /*PREGUNTAR SI ES NECESARIO PONERLO TODO EN COLUMNA CUANDO LLEGUE A ESE TAMAÑO EN PANTALLAS MUY GRANDES*/
+/*HACE FALTA PONER UN MÁXIMO PARA QUE NO SE DESPLAZE MUCHO LA IMAGEN?*/
 
 header {
   background-color: black;
@@ -31,15 +32,17 @@ header {
 }
 
 .seccion_1 {
-  height: 50vh;
   background-color: #529cf1;
 }
+
+/* PREGUNTAR POR ALTURA DE 50VH, AL PONERLO EL CONTENIDO SE DESBORDA PARA ANCHURAS MENORES A 280PX*/
+
 .container1 {
   display: flex;
   flex-direction: column;
   padding: 100px 10px 30px;
   color: white;
-  height: 100%;
+  /* height: 100%; */
   gap: 15px;
 }
 .title1 {
@@ -128,4 +131,44 @@ header {
   gap: 20px;
   padding: 20px;
   margin-top: 30px;
+}
+
+@media (min-width: 480px) {
+  .seccion_1 {
+    background-image: url(../img/premium_dancer.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 350px;
+    background-position-y: bottom;
+  }
+  .container1 {
+    max-width: 800px;
+    padding-inline: 30px;
+    gap: 30px;
+  }
+  .title1 {
+    font-size: 6rem;
+  }
+
+  .articles {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .item-sec2 {
+    align-items: center;
+    width: 300px;
+    flex-shrink: initial;
+  }
+}
+
+/*HACER QUE EL ÍTEM 1 Y EL 2 DECIRLES CON FLEX EL ESPACIO QUE DEBEN OCUPAR*/
+
+@media (min-width: 1000px) {
+  .seccion_1 {
+    background-size: 380px;
+  }
 }
