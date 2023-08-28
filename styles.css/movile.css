@@ -8,7 +8,8 @@ body {
   margin: auto;
 }
 /*PREGUNTAR SI ES NECESARIO PONERLO TODO EN COLUMNA CUANDO LLEGUE A ESE TAMAÑO EN PANTALLAS MUY GRANDES*/
-/*HACE FALTA PONER UN MÁXIMO PARA QUE NO SE DESPLAZE MUCHO LA IMAGEN?*/
+/*HACE FALTA PONER UN MÁXIMO PARA QUE NO SE DESPLAZE MUCHO LA IMAGEN?
+POner header, color azul y footer entero con max-width*/
 
 header {
   background-color: black;
@@ -17,6 +18,7 @@ header {
   z-index: 100px;
   top: 0;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header_img {
@@ -35,18 +37,18 @@ header {
   background-color: #529cf1;
 }
 
-/* PREGUNTAR POR ALTURA DE 50VH, AL PONERLO EL CONTENIDO SE DESBORDA PARA ANCHURAS MENORES A 280PX*/
-
 .container1 {
   display: flex;
   flex-direction: column;
-  padding: 100px 10px 30px;
+  min-height: 50vh;
+  justify-content: flex-end;
+  padding: 0 10px 60px;
   color: white;
-  /* height: 100%; */
-  gap: 15px;
+  gap: 25px;
 }
 .title1 {
   font-size: 4rem;
+  font-weight: 900;
 }
 .subtitle1 {
   font-size: 2.2rem;
@@ -60,7 +62,7 @@ header {
   padding: 10px;
   border-radius: 50px;
   text-align: center;
-  margin-block: 10px;
+  font-weight: 900;
   max-width: 320px;
 }
 .terms1 {
@@ -77,6 +79,7 @@ header {
 .title2 {
   font-size: 3.2rem;
   text-align: center;
+  font-weight: 900;
 }
 .articles {
   display: flex;
@@ -147,7 +150,10 @@ header {
     gap: 30px;
   }
   .title1 {
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+  .button1 {
+    max-width: 150px;
   }
 
   .articles {
@@ -162,6 +168,22 @@ header {
     align-items: center;
     width: 300px;
     flex-shrink: initial;
+  }
+  .burguer-menu {
+    display: none;
+  }
+  .header_nav {
+    display: flex;
+    color: white;
+  }
+  .header-ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    font-size: 1.1rem;
+    font-weight: 900;
   }
 }
 
