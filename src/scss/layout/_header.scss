@@ -1,5 +1,33 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  background-color: $colorHeaderFooter;
+  @include displayType(space-between, center);
+  position: sticky;
+  z-index: 100px;
+  top: 0;
+  &_img{height: 48px;
+  padding: 12px;
+    &-burger{
+      @media (min-width: 480px) {
+      display: none;}
+    }
+  }
+  &_nav{
+    display: none;
+    @media (min-width: 480px) {
+      @include displayType(0,0);
+      color: $primaryColor;}
+  }
+  &_ul{
+    @media (min-width: 480px){
+      @include displayType(0,center);
+      list-style: none;
+      gap: 20px;
+      padding: 25px;
+      @include fontType(1.1rem,900);
+    }
+  }
 }
+
+
+
+

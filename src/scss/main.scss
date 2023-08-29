@@ -1,53 +1,14 @@
-// @import 'core/variables';
-// @import 'core/reset';
+ @import 'core/variables';
+ @import 'core/reset';
+ @import 'core/mixins';
 // @import 'components/code';
 // @import 'components/links';
 // @import 'layout/page';
-// @import 'layout/header';
+@import 'layout/header';
 // @import 'layout/footer';
 // @import 'pages/index';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 62.5%;
-}
-
-html {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  max-width: 1200px;
-  margin: auto;
-}
-/*PREGUNTAR SI ES NECESARIO PONERLO TODO EN COLUMNA CUANDO LLEGUE A ESE TAMAÑO EN PANTALLAS MUY GRANDES*/
-/*HACE FALTA PONER UN MÁXIMO PARA QUE NO SE DESPLAZE MUCHO LA IMAGEN?
-POner header, color azul y footer entero con max-width*/
-
-header {
-  background-color: black;
-  display: flex;
-  position: sticky;
-  z-index: 100px;
-  top: 0;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_img {
-  height: 48px;
-  padding: 12px;
-}
-
-.header_nav {
-  display: none;
-}
 .main {
   min-height: 100vh;
 }
@@ -62,19 +23,19 @@ header {
   min-height: 50vh;
   justify-content: flex-end;
   padding: 0 10px 60px;
-  color: white;
+  color: $primaryColor;
   gap: 25px;
 }
 .title1 {
-  font-size: 4rem;
-  font-weight: 900;
+  @include fontType(4rem, 900);
+
 }
 .subtitle1 {
   font-size: 2.2rem;
 }
 .button1 {
   background-color: #2bb85a;
-  color: white;
+  color: $primaryColor;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -126,12 +87,12 @@ header {
 
 .info2 p {
   margin-top: 10px;
-  color: #54585a;
+  color: $secundaryColor;
 }
 
 .footer {
-  background-color: black;
-  color: #54585a;
+  background-color: $colorHeaderFooter;
+  color: $secundaryColor;
   display: flex;
 }
 .nav-footer {
@@ -188,22 +149,7 @@ header {
     width: 300px;
     flex-shrink: initial;
   }
-  .burguer-menu {
-    display: none;
-  }
-  .header_nav {
-    display: flex;
-    color: white;
-  }
-  .header-ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 20px;
-    padding: 25px;
-    font-size: 1.1rem;
-    font-weight: 900;
-  }
+
 }
 
 /*HACER QUE EL ÍTEM 1 Y EL 2 DECIRLES CON FLEX EL ESPACIO QUE DEBEN OCUPAR*/
