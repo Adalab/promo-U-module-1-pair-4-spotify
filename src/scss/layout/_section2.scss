@@ -1,0 +1,50 @@
+.section2 {
+  background-color: #fefefe;
+  padding: 45px 10px 30px;
+  @include displayType(0, center);
+  flex-direction: column;
+  &__title {
+    @include fontType( 3.2rem, 900);
+    text-align: center;
+  }
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    @media (min-width: 480px) {
+      @include fontType (center, center);
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}
+
+
+.sec2__item {
+  display: flex;
+  @media (min-width: 480px) {
+      align-items: center;
+      width: 300px;
+      flex-shrink: initial;
+  }
+  &--img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    & img {
+      height: 100px;
+    }
+  }
+  &--info {
+    width: 50%;
+    & h3 {
+      font-size: 1.6rem;
+    }
+    & p {
+      margin-top: 10px;
+      color: $secundaryColor;
+    }
+  }
+}
