@@ -4,7 +4,7 @@
   @include displayType(0, center);
   flex-direction: column;
   &__title {
-    @include fontType( 3.2rem, 900);
+    @include fontType(3.2rem, 900);
     text-align: center;
   }
   &__articles {
@@ -13,21 +13,26 @@
     padding: 30px;
     gap: 30px;
     @media (min-width: 480px) {
-      @include fontType (center, center);
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
     }
   }
 }
 
-
 .sec2__item {
   display: flex;
   @media (min-width: 480px) {
-      align-items: center;
-      width: 300px;
-      flex-shrink: initial;
+    align-items: center;
+    flex-shrink: initial;
+  }
+  @media (min-width: 1000px) {
+    flex-direction: column;
+    gap: 30px;
   }
   &--img {
     width: 50%;
@@ -35,6 +40,10 @@
     justify-content: center;
     & img {
       height: 100px;
+      @media (min-width: 1000px) {
+        height: 150px;
+        padding-top: 20px;
+      }
     }
   }
   &--info {
